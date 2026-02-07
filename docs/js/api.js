@@ -1,4 +1,4 @@
-const API_BASE = "https://invisibility-inquality-matter.onrender.com";
+const API_BASE = "https://invisibility-inquality-matter.onrender.com/api";
 
 export async function getAreas() {
   const res = await fetch(`${API_BASE}/areas`);
