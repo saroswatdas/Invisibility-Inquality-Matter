@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invisible Inequality Mapper</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Invisible Inequality Mapper</h1>
+      <div class="nav">
+        <a href="index.html">Map</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compare.html">Compare</a>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Filters</h2>
+
+        <p><b>Search Area</b></p>
+        <input id="searchBox" placeholder="Search area name..." />
+
+        <hr />
+
+        <p><b>Priority Level</b></p>
+        <button class="filter-btn active" data-priority="All">All</button>
+        <button class="filter-btn" data-priority="Critical">Critical</button>
+        <button class="filter-btn" data-priority="High">High</button>
+        <button class="filter-btn" data-priority="Moderate">Moderate</button>
+        <button class="filter-btn" data-priority="Low">Low</button>
+
+        <hr />
+
+        <p><b>Indicator Focus</b></p>
+        <select id="indicatorSelect">
+          <option value="overall">Overall Inequality</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="education">Education</option>
+          <option value="sanitation">Sanitation</option>
+          <option value="digital">Digital Access</option>
+          <option value="safety">Safety</option>
+        </select>
+
+        <div class="card">
+          <h3>What this shows</h3>
+          <p class="small">
+            This map highlights hidden inequality using indicators like
+            healthcare, education, sanitation, digital access, and safety.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Report Inequality</h3>
+          <p class="small">
+            Add a new location report (demo mode: saved only in your browser).
+          </p>
+
+          <input id="repName" placeholder="Area name" />
+          <input id="repLat" placeholder="Latitude (example 19.07)" />
+          <input id="repLng" placeholder="Longitude (example 72.87)" />
+
+          <select id="repPriority">
+            <option value="Critical">Critical</option>
+            <option value="High">High</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Low">Low</option>
+          </select>
+
+          <button id="repBtn">Submit Report</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <h2>Inequality Heatmap</h2>
+        <div id="map"></div>
+
+        <div class="card" id="infoBox">
+          <h3>Click a zone</h3>
+          <p class="small">Area details will appear here.</p>
+        </div>
+      </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script type="module" src="./js/map.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Mumbai - Dharavi",
+    "lat": 19.038,
+    "lng": 72.8538,
+    "priority": "Critical",
+    "indicators": {
+      "healthcare": 40,
+      "education": 45,
+      "sanitation": 30,
+      "digital": 50,
+      "safety": 35
+    }
+  },
+  {
+    "id": 2,
+    "name": "Delhi - Seelampur",
+    "lat": 28.6692,
+    "lng": 77.2663,
+    "priority": "High",
+    "indicators": {
+      "healthcare": 55,
+      "education": 50,
+      "sanitation": 45,
+      "digital": 60,
+      "safety": 40
+    }
+  },
+  {
+    "id": 3,
+    "name": "Kolkata - Howrah",
+    "lat": 22.5958,
+    "lng": 88.2636,
+    "priority": "Moderate",
+    "indicators": {
+      "healthcare": 65,
+      "education": 60,
+      "sanitation": 55,
+      "digital": 60,
+      "safety": 55
+    }
+  },
+  {
+    "id": 4,
+    "name": "Chennai - North Zone",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "priority": "Moderate",
+    "indicators": {
+      "healthcare": 70,
+      "education": 68,
+      "sanitation": 60,
+      "digital": 72,
+      "safety": 62
+    }
+  },
+  {
+    "id": 5,
+    "name": "Bangalore - Whitefield",
+    "lat": 12.9698,
+    "lng": 77.7499,
+    "priority": "Low",
+    "indicators": {
+      "healthcare": 85,
+      "education": 88,
+      "sanitation": 80,
+      "digital": 90,
+      "safety": 82
+    }
+  }
+]

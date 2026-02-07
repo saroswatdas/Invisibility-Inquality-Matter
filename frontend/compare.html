@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare - Inequality Mapper</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Compare Areas</h1>
+      <div class="nav">
+        <a href="index.html">Map</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compare.html">Compare</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <h2>Compare Two Areas</h2>
+
+      <div class="card">
+        <p>Select 2 areas to compare inequality indicators.</p>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap">
+          <select id="area1"></select>
+          <select id="area2"></select>
+          <button id="compareBtn">Compare</button>
+        </div>
+      </div>
+
+      <div class="card" id="compareResult">
+        <h3>Result</h3>
+        <p class="small">Choose 2 areas and click Compare.</p>
+      </div>
+
+      <div class="card" id="compareTableCard" style="display: none">
+        <h3>Indicator Breakdown</h3>
+        <div id="compareTable"></div>
+      </div>
+    </main>
+
+    <script type="module" src="./js/compare.js"></script>
+  </body>
+</html>

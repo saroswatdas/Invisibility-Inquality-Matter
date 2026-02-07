@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Inequality Mapper</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Dashboard</h1>
+      <div class="nav">
+        <a href="index.html">Map</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="compare.html">Compare</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <h2>Dashboard</h2>
+
+      <div class="card">
+        <h3>Priority Distribution</h3>
+        <canvas id="priorityChart"></canvas>
+      </div>
+
+      <div class="card">
+        <h3>Top 5 Most Inequal Areas</h3>
+        <canvas id="topAreasChart"></canvas>
+      </div>
+    </main>
+
+    <script type="module" src="./js/dashboard.js"></script>
+  </body>
+</html>
